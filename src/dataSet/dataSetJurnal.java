@@ -5,7 +5,7 @@
 package dataSet;
 
 import java.util.ArrayList;
-import java.util.Date;
+
 
 /**
  *
@@ -19,7 +19,7 @@ public class dataSetJurnal {
     private ArrayList<String> keterangan;
     private ArrayList<Double> kredit;
     private ArrayList<String> namaAkun;
-    private ArrayList<Date> tanggal;
+    private ArrayList<String> tanggal;
     private ArrayList<Integer> Jumlah;
 
     public dataSetJurnal() {
@@ -30,7 +30,7 @@ public class dataSetJurnal {
         keterangan = new ArrayList<String>();
         kredit = new ArrayList<Double>();
         namaAkun = new ArrayList<String>();
-        tanggal = new ArrayList<Date>();
+        tanggal = new ArrayList<String>();
         Jumlah = new ArrayList<Integer>();
     }
 
@@ -90,11 +90,11 @@ public class dataSetJurnal {
         return this.namaAkun;
     }
 
-    public void tanggal(Date f) {
+    public void tanggal(String f) {
         tanggal.add(f);
     }
 
-    public ArrayList<Date> getdataSetTanggal() {
+    public ArrayList<String> getdataSetTanggal() {
         return this.tanggal;
     }
 
@@ -107,7 +107,7 @@ public class dataSetJurnal {
     }
 
     
-    public void tambahJurnal(Double debet, int idAkun, int idJurnal, int idSewa, String keterangan, Double kredit, String namaAkun, Date tanggal, int Jumlah){
+    public void tambahJurnal(Double debet, int idAkun, int idJurnal, int idSewa, String keterangan, Double kredit, String namaAkun, String tanggal, int Jumlah){
         this.debet.add(debet);
         this.idAkun.add(idAkun);
         this.idJurnal.add(idJurnal);

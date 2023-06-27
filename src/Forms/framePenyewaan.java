@@ -3,18 +3,22 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package Forms;
+import dataSet.dataSetPenyewaan;
+import javax.swing.JOptionPane;
 
 /**
  *
  * @author asus
  */
 public class framePenyewaan extends javax.swing.JFrame {
-
+    dataSetPenyewaan dsPenyewaan;
     /**
      * Creates new form framePenyewaan
      */
     public framePenyewaan() {
         initComponents();
+        this.setLocationRelativeTo(null);
+        dsPenyewaan = new dataSetPenyewaan();
     }
 
     /**
@@ -26,21 +30,186 @@ public class framePenyewaan extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel5 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        txtIdAlat = new javax.swing.JTextField();
+        txtIdCust = new javax.swing.JTextField();
+        txtIdSewa = new javax.swing.JTextField();
+        txtHargaSewa = new javax.swing.JTextField();
+        txtTglSewa = new javax.swing.JTextField();
+        txtTotalSewa = new javax.swing.JTextField();
+        btnTambahData = new javax.swing.JButton();
+        btnBacaData = new javax.swing.JButton();
+        txtindex = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
+        txtNoPol = new javax.swing.JTextField();
+
+        jLabel5.setText("jLabel5");
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jLabel1.setText("Id Alat");
+
+        jLabel2.setText("Id Costumer");
+
+        jLabel3.setText("Id Sewa");
+
+        jLabel4.setText("Harga Sewa");
+
+        jLabel6.setText("Tanggal Sewa");
+
+        jLabel7.setText("Total Sewa");
+
+        txtIdSewa.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtIdSewaActionPerformed(evt);
+            }
+        });
+
+        txtHargaSewa.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtHargaSewaActionPerformed(evt);
+            }
+        });
+
+        btnTambahData.setText("Tambah Data");
+        btnTambahData.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTambahDataActionPerformed(evt);
+            }
+        });
+
+        btnBacaData.setText("Baca Data");
+        btnBacaData.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBacaDataActionPerformed(evt);
+            }
+        });
+
+        txtindex.setText("0");
+
+        jLabel8.setText("No Pol");
+
+        txtNoPol.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNoPolActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel6)
+                    .addComponent(jLabel7)
+                    .addComponent(txtindex, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel8))
+                .addGap(64, 64, 64)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnTambahData, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnBacaData, javax.swing.GroupLayout.DEFAULT_SIZE, 103, Short.MAX_VALUE))
+                    .addComponent(txtIdAlat)
+                    .addComponent(txtIdCust)
+                    .addComponent(txtIdSewa)
+                    .addComponent(txtHargaSewa)
+                    .addComponent(txtTglSewa)
+                    .addComponent(txtTotalSewa)
+                    .addComponent(txtNoPol))
+                .addContainerGap(30, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1)
+                    .addComponent(txtIdAlat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(26, 26, 26)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(txtIdCust, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(29, 29, 29)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(txtIdSewa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(31, 31, 31)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(txtHargaSewa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(30, 30, 30)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel6)
+                    .addComponent(txtTglSewa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(27, 27, 27)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel7)
+                    .addComponent(txtTotalSewa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel8)
+                    .addComponent(txtNoPol, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnTambahData)
+                    .addComponent(btnBacaData)
+                    .addComponent(txtindex, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void txtIdSewaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtIdSewaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtIdSewaActionPerformed
+
+    private void txtHargaSewaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtHargaSewaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtHargaSewaActionPerformed
+
+    private void txtNoPolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNoPolActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNoPolActionPerformed
+
+    private void btnTambahDataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTambahDataActionPerformed
+        dsPenyewaan.idAlat(Integer.valueOf(txtIdAlat.getText()));
+        dsPenyewaan.idCust(Integer.valueOf(txtIdCust.getText()));
+        dsPenyewaan.idSewa(Integer.valueOf(txtIdSewa.getText()));
+        dsPenyewaan.hrgSewa(Double.valueOf(txtHargaSewa.getText()));
+        dsPenyewaan.tglSewa(txtTglSewa.getText());
+        dsPenyewaan.totalSewa(Double.valueOf(txtTotalSewa.getText()));
+        dsPenyewaan.noPol(txtNoPol.getText());
+        
+        String pesan = "Data Berhasil Disimpan ke Array";
+        JOptionPane.showMessageDialog(this, pesan);   
+    }//GEN-LAST:event_btnTambahDataActionPerformed
+
+    private void btnBacaDataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBacaDataActionPerformed
+        int i = Integer.valueOf(txtindex.getText());
+        String isipesan = "Id Alat : " + dsPenyewaan.getdataSetIdAlat().get(i)+
+                      "\nId Costumer : " + dsPenyewaan.getdataSetIdCust().get(i) +
+                      "\nId Sewa : " + dsPenyewaan.getdataSetIdSewa().get(i) +
+                      "\nHarga Sewa : " + dsPenyewaan.getdataSetHrgSewa().get(i) +
+                      "\nTanggal Sewa : " + dsPenyewaan.getdataSetTglSewa().get(i )+
+                      "\nTotal Sewa : " + dsPenyewaan.getdataSetTotalSewa().get(i) +
+                      "\nNo Pol : " + dsPenyewaan.getdataSetNoPol().get(i);
+        
+        JOptionPane.showMessageDialog(this, isipesan);
+    }//GEN-LAST:event_btnBacaDataActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +247,23 @@ public class framePenyewaan extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnBacaData;
+    private javax.swing.JButton btnTambahData;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JTextField txtHargaSewa;
+    private javax.swing.JTextField txtIdAlat;
+    private javax.swing.JTextField txtIdCust;
+    private javax.swing.JTextField txtIdSewa;
+    private javax.swing.JTextField txtNoPol;
+    private javax.swing.JTextField txtTglSewa;
+    private javax.swing.JTextField txtTotalSewa;
+    private javax.swing.JTextField txtindex;
     // End of variables declaration//GEN-END:variables
 }

@@ -3,18 +3,21 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package Forms;
-
+import dataSet.dataSetPengiriman;
+import javax.swing.JOptionPane;
 /**
  *
  * @author asus
  */
 public class framePengiriman extends javax.swing.JFrame {
-
+    dataSetPengiriman dsPengiriman;
     /**
      * Creates new form framePengiriman
      */
     public framePengiriman() {
         initComponents();
+        this.setLocationRelativeTo(null);
+        dsPengiriman = new dataSetPengiriman();
     }
 
     /**
@@ -26,21 +29,165 @@ public class framePengiriman extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        txtIdCust = new javax.swing.JTextField();
+        txtIdKirim = new javax.swing.JTextField();
+        txtIdSewa = new javax.swing.JTextField();
+        txtNoPol = new javax.swing.JTextField();
+        txtOperator = new javax.swing.JTextField();
+        txtTanggal = new javax.swing.JTextField();
+        btnTambahData = new javax.swing.JButton();
+        btnBacaData = new javax.swing.JButton();
+        txtindex = new javax.swing.JTextField();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jLabel1.setText("Id Costumer");
+
+        jLabel2.setText("Id Kirim");
+
+        jLabel3.setText("Id Sewa");
+
+        jLabel4.setText("No Pol");
+
+        jLabel5.setText("Operator");
+
+        jLabel6.setText("Tanggal");
+
+        txtIdCust.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtIdCustActionPerformed(evt);
+            }
+        });
+
+        txtOperator.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtOperatorActionPerformed(evt);
+            }
+        });
+
+        btnTambahData.setText("Tambah Data");
+        btnTambahData.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTambahDataActionPerformed(evt);
+            }
+        });
+
+        btnBacaData.setText("Baca Data");
+        btnBacaData.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBacaDataActionPerformed(evt);
+            }
+        });
+
+        txtindex.setText("0");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(17, 17, 17)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1)
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel6)
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel4))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(txtIdKirim)
+                            .addComponent(txtIdCust)
+                            .addComponent(txtIdSewa)
+                            .addComponent(txtNoPol)
+                            .addComponent(txtOperator)
+                            .addComponent(txtTanggal, javax.swing.GroupLayout.DEFAULT_SIZE, 231, Short.MAX_VALUE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(32, 32, 32)
+                        .addComponent(btnTambahData, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(31, 31, 31)
+                        .addComponent(btnBacaData, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
+                        .addComponent(txtindex, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(29, 29, 29))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(txtIdCust, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(26, 26, 26)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(txtIdKirim, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(27, 27, 27)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(txtIdSewa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(22, 22, 22)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(txtNoPol, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(26, 26, 26)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(txtOperator, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(23, 23, 23)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel6)
+                    .addComponent(txtTanggal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnTambahData)
+                    .addComponent(btnBacaData)
+                    .addComponent(txtindex, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void txtOperatorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtOperatorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtOperatorActionPerformed
+
+    private void btnTambahDataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTambahDataActionPerformed
+        dsPengiriman.idCust(Integer.valueOf(txtIdCust.getText()));
+        dsPengiriman.idKirim(Integer.valueOf(txtIdKirim.getText()));
+        dsPengiriman.idSewa(Integer.valueOf(txtIdSewa.getText()));
+        dsPengiriman.noPol(txtNoPol.getText());
+        dsPengiriman.operator(txtOperator.getText());
+        dsPengiriman.tanggal(txtTanggal.getText());
+        
+        String pesan = "Data Berhasil Disimpan ke Array";
+        JOptionPane.showMessageDialog(this, pesan);      
+    }//GEN-LAST:event_btnTambahDataActionPerformed
+
+    private void txtIdCustActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtIdCustActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtIdCustActionPerformed
+
+    private void btnBacaDataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBacaDataActionPerformed
+       int i = Integer.valueOf(txtindex.getText());
+        String isipesan = "Id Costumer : " + dsPengiriman.getdataSetidCust().get(i)+
+                      "\nId Kirim : " + dsPengiriman.getdataSetidKirim().get(i) +
+                      "\nId Sewa : " + dsPengiriman.getdataSetidSewa().get(i) +
+                      "\nNo Pol : " + dsPengiriman.getdataSetnoPol().get(i) +
+                      "\nOperator : " + dsPengiriman.getdataSetoperator().get(i)+
+                      "\nTanggal : " + dsPengiriman.getdataSettanggal().get(i);
+        
+        JOptionPane.showMessageDialog(this, isipesan);
+    }//GEN-LAST:event_btnBacaDataActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +225,20 @@ public class framePengiriman extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnBacaData;
+    private javax.swing.JButton btnTambahData;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JTextField txtIdCust;
+    private javax.swing.JTextField txtIdKirim;
+    private javax.swing.JTextField txtIdSewa;
+    private javax.swing.JTextField txtNoPol;
+    private javax.swing.JTextField txtOperator;
+    private javax.swing.JTextField txtTanggal;
+    private javax.swing.JTextField txtindex;
     // End of variables declaration//GEN-END:variables
 }

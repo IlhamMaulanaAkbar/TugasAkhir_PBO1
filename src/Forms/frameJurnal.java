@@ -4,10 +4,6 @@
  */
 package Forms;
 import dataSet.dataSetJurnal;
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import javax.swing.JOptionPane;
 /**
  *
@@ -53,7 +49,7 @@ public class frameJurnal extends javax.swing.JFrame {
         btnTambahData = new javax.swing.JButton();
         btnBacaData = new javax.swing.JButton();
         txtindex = new javax.swing.JTextField();
-        txtTanggal = new javax.swing.JFormattedTextField();
+        txtTanggal = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -95,10 +91,13 @@ public class frameJurnal extends javax.swing.JFrame {
         });
 
         btnBacaData.setText("Baca Data");
+        btnBacaData.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBacaDataActionPerformed(evt);
+            }
+        });
 
         txtindex.setText("0");
-
-        txtTanggal.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(java.text.DateFormat.getDateInstance(java.text.DateFormat.SHORT))));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -198,12 +197,30 @@ public class frameJurnal extends javax.swing.JFrame {
         dsJurnal.idJurnal(Integer.valueOf(txtIdJurnal.getText()));
         dsJurnal.idSewa(Integer.valueOf(txtIdSewa.getText()));
         dsJurnal.keterangan(txtKeterangan.getText());
-        dsJurnal.tanggal(dateFormat.parse(txtTanggal.getText()));
+        dsJurnal.tanggal(txtTanggal.getText());
         dsJurnal.namaAkun(txtNamaAkun.getText());
         dsJurnal.debet(Double.valueOf(txtDebet.getText()));
         dsJurnal.kredit(Double.valueOf(txtKredit.getText()));
         dsJurnal.jumlah(Integer.valueOf(txtJumlah.getText()));
+        
+        String pesan = "Data Berhasil Disimpan ke Array";
+        JOptionPane.showMessageDialog(this, pesan);
     }//GEN-LAST:event_btnTambahDataActionPerformed
+
+    private void btnBacaDataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBacaDataActionPerformed
+        int i = Integer.valueOf(txtindex.getText());
+        String isipesan = "Id Akun : " + dsJurnal.getdataSetIdAkun().get(i)+
+                      "\nId Jurnal : " + dsJurnal.getdataSetIdJurnal().get(i) +
+                      "\nId Sewa : " + dsJurnal.getdataSetIdSewa().get(i) +
+                      "\nKeterangan : " + dsJurnal.getdataSetKeterangan().get(i) +
+                      "\nTanggal : " + dsJurnal.getdataSetTanggal().get(i)+
+                      "\nNama Akun : " + dsJurnal.getdataSetNamaAkun().get(i) +
+                      "\nDebet : " + dsJurnal.getdataSetDebet().get(i) +
+                      "\nKredit : " + dsJurnal.getdataSetKredit().get(i) +
+                      "\nJumlah : " + dsJurnal.getdataSetJumlah().get(i);
+        
+    JOptionPane.showMessageDialog(this, isipesan);
+    }//GEN-LAST:event_btnBacaDataActionPerformed
 
     /**
      * @param args the command line arguments
@@ -260,7 +277,7 @@ public class frameJurnal extends javax.swing.JFrame {
     private javax.swing.JTextField txtKeterangan;
     private javax.swing.JTextField txtKredit;
     private javax.swing.JTextField txtNamaAkun;
-    private javax.swing.JFormattedTextField txtTanggal;
+    private javax.swing.JTextField txtTanggal;
     private javax.swing.JTextField txtindex;
     // End of variables declaration//GEN-END:variables
 }

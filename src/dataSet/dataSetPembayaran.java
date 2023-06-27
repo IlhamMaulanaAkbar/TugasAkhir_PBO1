@@ -4,7 +4,7 @@
  */
 package dataSet;
 import java.util.ArrayList;
-import java.util.Date;
+
 
 /**
  *
@@ -16,7 +16,7 @@ public class dataSetPembayaran {
     private ArrayList<Integer> idSewa;
     private ArrayList<String> keterangan;
     private ArrayList<Double> nominal;
-    private ArrayList<Date> tanggal;
+    private ArrayList<String> tanggal;
     
     public dataSetPembayaran(){
         idBayar = new ArrayList<Integer>();
@@ -24,7 +24,7 @@ public class dataSetPembayaran {
         idSewa = new ArrayList<Integer>();
         keterangan = new ArrayList<String>();
         nominal = new ArrayList<Double>();
-        tanggal = new ArrayList<Date>();                      
+        tanggal = new ArrayList<String>();                      
     }
     
     public void idBayar(int a){
@@ -67,15 +67,15 @@ public class dataSetPembayaran {
         return this.nominal;
     }
     
-    public void tanggal(Date e){
+    public void tanggal(String e){
         tanggal.add(e);
     }
     
-    public ArrayList<Date> getdataSettanggal(){
+    public ArrayList<String> getdataSettanggal(){
         return this.tanggal;
     }
     
-    public void tambahPembayaran(int idBayar, int idCust, int idSewa, String keterangan, double nomimal, Date tanggal){
+    public void tambahPembayaran(int idBayar, int idCust, int idSewa, String keterangan, double nomimal, String tanggal){
         this.idBayar.add(idBayar);
         this.idCust.add(idCust);
         this.idSewa.add(idSewa);

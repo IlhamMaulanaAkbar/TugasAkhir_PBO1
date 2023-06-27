@@ -19,10 +19,10 @@ public class Jurnal {
     private String keterangan;
     private double kredit;
     private String namaAkun;
-    private Date tanggal;
+    private String tanggal;
     private int Jumlah;
 
-    public Jurnal(double debet, int idAkun, int idJurnal, int idSewa, String keterangan, double kredit, String namaAkun, Date tanggal, int Jumlah) {
+    public Jurnal(double debet, int idAkun, int idJurnal, int idSewa, String keterangan, double kredit, String namaAkun, String tanggal, int Jumlah) {
         this.debet = debet;
         this.idAkun = idAkun;
         this.idJurnal = idJurnal;
@@ -63,7 +63,7 @@ public class Jurnal {
         return namaAkun;
     }
 
-    public Date getTanggal() {
+    public String getTanggal() {
         return tanggal;
     }
     
@@ -100,7 +100,7 @@ public class Jurnal {
         this.namaAkun = namaAkun;
     }
 
-    public void setTanggal(Date tanggal) {
+    public void setTanggal(String tanggal) {
         this.tanggal = tanggal;
     }
     

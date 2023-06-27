@@ -16,19 +16,15 @@ public class Penyewaan {
     private int idAlat;
     private int idCust;
     private int idSewa;
-    private int jumlah;
-    private int lamaKerja;
     private String noPol;
-    private Date tglSewa;
+    private String tglSewa;
     private double totalSewa;
 
-    public Penyewaan(double hrgSewa, int idAlat, int idCust, int idSewa, int jumlah, int lamaKerja, String noPol, Date tglSewa, double totalSewa) {
+    public Penyewaan(double hrgSewa, int idAlat, int idCust, int idSewa, String noPol, String tglSewa, double totalSewa) {
         this.hrgSewa = hrgSewa;
         this.idAlat = idAlat;
         this.idCust = idCust;
         this.idSewa = idSewa;
-        this.jumlah = jumlah;
-        this.lamaKerja = lamaKerja;
         this.noPol = noPol;
         this.tglSewa = tglSewa;
         this.totalSewa = totalSewa;
@@ -51,19 +47,11 @@ public class Penyewaan {
         return idSewa;
     }
 
-    public int getJumlah() {
-        return jumlah;
-    }
-
-    public int getLmKerja() {
-        return lamaKerja;
-    }
-
     public String getNoPol() {
         return noPol;
     }
 
-    public Date getTglSewa() {
+    public String getTglSewa() {
         return tglSewa;
     }
 
@@ -88,19 +76,11 @@ public class Penyewaan {
         this.idSewa = idSewa;
     }
 
-    public void setJumlah(int jumlah) {
-        this.jumlah = jumlah;
-    }
-
-    public void setLamaKerja(int lamaKerja) {
-        this.lamaKerja = lamaKerja;
-    }
-
     public void setNoPol(String noPol) {
         this.noPol = noPol;
     }
 
-    public void setTglSewa(Date tglSewa) {
+    public void setTglSewa(String tglSewa) {
         this.tglSewa = tglSewa;
     }
 

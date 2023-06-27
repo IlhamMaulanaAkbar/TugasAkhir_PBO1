@@ -17,9 +17,9 @@ public class Pengiriman {
     private int idSewa;
     private String noPol;
     private String operator;
-    private Date tanggal;
+    private String tanggal;
 
-    public Pengiriman(int idCust, int idKirim, int idSewa, String noPol, String operator, Date tanggal) {
+    public Pengiriman(int idCust, int idKirim, int idSewa, String noPol, String operator, String tanggal) {
         this.idCust = idCust;
         this.idKirim = idKirim;
         this.idSewa = idSewa;
@@ -49,7 +49,7 @@ public class Pengiriman {
         return operator;
     }
 
-    public Date getTanggal() {
+    public String getTanggal() {
         return tanggal;
     }
 
@@ -74,7 +74,7 @@ public class Pengiriman {
         this.operator = operator;
     }
 
-    public void setTanggal(Date tanggal) {
+    public void setTanggal(String tanggal) {
         this.tanggal = tanggal;
     }
 }

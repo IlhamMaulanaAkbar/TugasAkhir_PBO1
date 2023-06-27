@@ -4,31 +4,20 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/asus/Documents/NetBeansProjects/IlhamMaulanaAkbar_2110010118/src/Forms/framePembayaran.java</file>
+            <file>file:/C:/Users/asus/Documents/NetBeansProjects/IlhamMaulanaAkbar_2110010118/src/Forms/framePengiriman.java</file>
             <file>file:/C:/Users/asus/Documents/NetBeansProjects/IlhamMaulanaAkbar_2110010118/src/MenuUtama/Pembayaran.java</file>
             <file>file:/C:/Users/asus/Documents/NetBeansProjects/IlhamMaulanaAkbar_2110010118/src/MenuUtama/Penyewaan.java</file>
-            <file>file:/C:/Users/asus/Documents/NetBeansProjects/IlhamMaulanaAkbar_2110010118/src/Forms/frameUtama.java</file>
-            <file>file:/C:/Users/asus/Documents/NetBeansProjects/IlhamMaulanaAkbar_2110010118/src/Forms/framePenyewaan.java</file>
-            <file>file:/C:/Users/asus/Documents/NetBeansProjects/IlhamMaulanaAkbar_2110010118/src/dataSet/dataSetJurnal.java</file>
-            <file>file:/C:/Users/asus/Documents/NetBeansProjects/IlhamMaulanaAkbar_2110010118/src/Forms/frameCostumer.java</file>
-            <file>file:/C:/Users/asus/Documents/NetBeansProjects/IlhamMaulanaAkbar_2110010118/src/Forms/frameJurnal.java</file>
-            <file>file:/C:/Users/asus/Documents/NetBeansProjects/IlhamMaulanaAkbar_2110010118/src/Forms/frameAkun.java</file>
-            <file>file:/C:/Users/asus/Documents/NetBeansProjects/IlhamMaulanaAkbar_2110010118/src/MenuUtama/AlatBerat.java</file>
-            <file>file:/C:/Users/asus/Documents/NetBeansProjects/IlhamMaulanaAkbar_2110010118/src/dataSet/dataSetPembayaran.java</file>
-            <file>file:/C:/Users/asus/Documents/NetBeansProjects/IlhamMaulanaAkbar_2110010118/src/MenuUtama/Admin.java</file>
-            <file>file:/C:/Users/asus/Documents/NetBeansProjects/IlhamMaulanaAkbar_2110010118/src/dataSet/dataSetAkun.java</file>
-            <file>file:/C:/Users/asus/Documents/NetBeansProjects/IlhamMaulanaAkbar_2110010118/src/Forms/framePengiriman.java</file>
-            <file>file:/C:/Users/asus/Documents/NetBeansProjects/IlhamMaulanaAkbar_2110010118/src/MenuUtama/Costumer.java</file>
-            <file>file:/C:/Users/asus/Documents/NetBeansProjects/IlhamMaulanaAkbar_2110010118/src/Forms/frameAlatBerat.java</file>
-            <file>file:/C:/Users/asus/Documents/NetBeansProjects/IlhamMaulanaAkbar_2110010118/src/dataSet/dataSetAdmin.java</file>
             <file>file:/C:/Users/asus/Documents/NetBeansProjects/IlhamMaulanaAkbar_2110010118/src/MenuUtama/Pengiriman.java</file>
             <file>file:/C:/Users/asus/Documents/NetBeansProjects/IlhamMaulanaAkbar_2110010118/src/dataSet/dataSetPengiriman.java</file>
             <file>file:/C:/Users/asus/Documents/NetBeansProjects/IlhamMaulanaAkbar_2110010118/src/dataSet/dataSetCostumer.java</file>
+            <file>file:/C:/Users/asus/Documents/NetBeansProjects/IlhamMaulanaAkbar_2110010118/src/Forms/framePenyewaan.java</file>
             <file>file:/C:/Users/asus/Documents/NetBeansProjects/IlhamMaulanaAkbar_2110010118/src/dataSet/dataSetAlatBerat.java</file>
-            <file>file:/C:/Users/asus/Documents/NetBeansProjects/IlhamMaulanaAkbar_2110010118/src/MenuUtama/Jurnal.java</file>
-            <file>file:/C:/Users/asus/Documents/NetBeansProjects/IlhamMaulanaAkbar_2110010118/src/Forms/frameAdmin.java</file>
-            <file>file:/C:/Users/asus/Documents/NetBeansProjects/IlhamMaulanaAkbar_2110010118/src/MenuUtama/Akun.java</file>
+            <file>file:/C:/Users/asus/Documents/NetBeansProjects/IlhamMaulanaAkbar_2110010118/src/dataSet/dataSetJurnal.java</file>
+            <file>file:/C:/Users/asus/Documents/NetBeansProjects/IlhamMaulanaAkbar_2110010118/src/Forms/frameCostumer.java</file>
             <file>file:/C:/Users/asus/Documents/NetBeansProjects/IlhamMaulanaAkbar_2110010118/src/MenuUtama/MenuUtama.java</file>
             <file>file:/C:/Users/asus/Documents/NetBeansProjects/IlhamMaulanaAkbar_2110010118/src/dataSet/dataSetPenyewaan.java</file>
+            <file>file:/C:/Users/asus/Documents/NetBeansProjects/IlhamMaulanaAkbar_2110010118/src/MenuUtama/AlatBerat.java</file>
+            <file>file:/C:/Users/asus/Documents/NetBeansProjects/IlhamMaulanaAkbar_2110010118/src/dataSet/dataSetPembayaran.java</file>
         </group>
     </open-files>
 </project-private>

@@ -17,10 +17,10 @@ public class Pembayaran {
     private int idSewa;
     private String keterangan;
     private double nominal;
-    private Date tanggal;
+    private String tanggal;
     
 
-    public Pembayaran(int idBayar, int idCust, int idSewa, String keterangan, double nominal, Date tanggal) {
+    public Pembayaran(int idBayar, int idCust, int idSewa, String keterangan, double nominal, String tanggal) {
         this.idBayar = idBayar;
         this.idCust = idCust;
         this.idSewa = idSewa;
@@ -50,7 +50,7 @@ public class Pembayaran {
         return nominal;
     }
 
-    public Date getTanggal() {
+    public String getTanggal() {
         return tanggal;
     }
 
@@ -75,7 +75,7 @@ public class Pembayaran {
         this.nominal = nominal;
     }
 
-    public void setTanggal(Date tanggal) {
+    public void setTanggal(String tanggal) {
         this.tanggal = tanggal;
     }
 }
